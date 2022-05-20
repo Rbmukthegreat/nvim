@@ -29,3 +29,6 @@ set noerrorbells
 set tabstop=4 softtabstop=4
 set expandtab
 set smartindent
+
+" added back ctrl + backspace (on mac)
+imap <Esc><BS> <C-w>
