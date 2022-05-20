@@ -1,5 +1,4 @@
 set nocompatible
-set number
 filetype off
 
 call plug#begin('~/.config/nvim/plugged')
@@ -19,3 +18,14 @@ let g:lightline = {
   \ }
 
 map <silent> <C-n> :NERDTreeFocus <CR>
+
+filetype plugin indent on
+syntax on
+set number
+set nowrap
+set smartcase
+set hlsearch
+set noerrorbells
+set tabstop=4 softtabstop=4
+set expandtab
+set smartindent
