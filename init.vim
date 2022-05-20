@@ -34,3 +34,6 @@ set smartindent
 
 " added back ctrl + backspace (on mac)
 imap <Esc><BS> <C-w>
+
+" makes it so I can see parenthesis
+hi MatchParen guifg=black guibg=lightmagenta
