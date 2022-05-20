@@ -8,6 +8,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lervag/vimtex'
 call plug#end()
 
 colorscheme dogrun
@@ -27,6 +28,7 @@ set smartcase
 set hlsearch
 set noerrorbells
 set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
 
