@@ -18,7 +18,9 @@ let g:lightline = {
   \ 'colorscheme': 'dogrun',
   \ }
 
+" nerdtree stuff
 map <silent> <C-n> :NERDTreeFocus <CR>
+let g:NERDTreeQuitOnOpen=1
 
 filetype plugin indent on
 syntax on
@@ -31,9 +33,20 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set scrolloff=4
+set relativenumber
 
 " added back ctrl + backspace (on mac)
 imap <Esc><BS> <C-w>
 
 " makes it so I can see parenthesis
 hi MatchParen guifg=black guibg=lightmagenta
+
+" makes it so I can see line numbers
+hi LineNr guifg=lightmagenta
+
+" fixes pyright
+let g:python3_host_prog='/opt/homebrew/bin/python3'
+
+" makes highlights better
+set nohlsearch
