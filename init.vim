@@ -36,6 +36,17 @@ let g:NERDTreeQuitOnOpen=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16'
 
+" semshi
+function MyCustomHighlights()
+    hi semshiLocal           ctermfg=209 guifg=#00FFFF
+    hi semshiGlobal          ctermfg=214 guifg=#96E072
+    hi semshiImported        ctermfg=214 guifg=#96E072 cterm=bold gui=bold
+    hi semshiBuiltin         ctermfg=207 guifg=#FFE66D
+    hi semshiSelf            ctermfg=249 guifg=#ff00aa
+    hi semshiAttribute       ctermfg=49  guifg=#f92672
+endfunction
+autocmd FileType python call MyCustomHighlights()
+
 filetype plugin indent on
 syntax on
 set number
@@ -60,7 +71,7 @@ hi MatchParen guifg=black guibg=lightmagenta
 hi LineNr guifg=lightmagenta
 
 " fixes pyright
-let g:python3_host_prog='/bin/python3'
+"let g:python3_host_prog='/opt/homebrew/bin/python3'
 
 " makes highlights better
 set nohlsearch
