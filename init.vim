@@ -71,7 +71,7 @@ hi MatchParen guifg=black guibg=lightmagenta
 hi LineNr guifg=lightmagenta
 
 " fixes pyright
-"let g:python3_host_prog='/opt/homebrew/bin/python3'
+let g:python3_host_prog='/usr/bin/python3'
 
 " makes highlights better
 set nohlsearch
@@ -81,3 +81,6 @@ let g:rainbow_active=1
 
 " makes it so yanks go into clipboard
 set clipboard=unnamedplus
+
+" makes middle bar smaller + green
+hi VertSplit guibg=bg guifg=#00ff00
