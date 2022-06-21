@@ -25,6 +25,7 @@ Plug 'luochen1990/rainbow'
 Plug 'safv12/andromeda.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
 colorscheme andromeda 
@@ -39,11 +40,12 @@ let g:airline_theme='base16'
 " semshi
 function MyCustomHighlights()
     hi semshiLocal           ctermfg=209 guifg=#00FFFF
-    hi semshiGlobal          ctermfg=214 guifg=#96E072
-    hi semshiImported        ctermfg=214 guifg=#96E072 cterm=bold gui=bold
+    hi semshiGlobal          ctermfg=214 guifg=#FF748C
+    hi semshiImported        ctermfg=214 guifg=#FF748C cterm=bold gui=bold
     hi semshiBuiltin         ctermfg=207 guifg=#FFE66D
     hi semshiSelf            ctermfg=249 guifg=#ff00aa
     hi semshiAttribute       ctermfg=49  guifg=#f92672
+    hi semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
 endfunction
 autocmd FileType python call MyCustomHighlights()
 
@@ -65,7 +67,7 @@ set relativenumber
 imap <Esc><BS> <C-w>
 
 " makes it so I can see parenthesis
-hi MatchParen guifg=black guibg=lightmagenta
+"hi MatchParen guifg=black guibg=lightmagenta
 
 " makes it so I can see line numbers
 hi LineNr guifg=lightmagenta
